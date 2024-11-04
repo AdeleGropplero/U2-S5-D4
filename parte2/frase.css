@@ -8,3 +8,85 @@
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
 
+body {
+  font-family: "Bree Serif", sans-serif;
+  font-size: 3rem;
+  color: #333;
+  line-height: 1.5;
+  padding: 30px;
+}
+
+i:nth-child(1) {
+  color: #6b889d;
+  animation: rotateWords 9s linear infinite;
+}
+
+i:nth-child(2) {
+  color: #6b889d;
+  animation: rotateWords 9s linear infinite;
+  animation-delay: 3s;
+}
+
+i:last-child {
+  color: #6b739d;
+  animation: rotateWords 9s linear infinite;
+  animation-delay: 6s;
+}
+
+#testoAlternato {
+  border: solid rgb(58, 61, 58) 5px;
+  padding: 20px;
+  display: flex;
+}
+
+.parole {
+  position: relative;
+  display: inline-block;
+  height: 16px;
+  width: max-content;
+}
+
+.parole i {
+  position: absolute;
+  top: -39px;
+  opacity: 0;
+  overflow: hidden;
+  width: 400px;
+}
+
+@keyframes rotateWords {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px) scale(0.1);
+  }
+
+  15% {
+    opacity: 0.2;
+    transform: translateY(-30px) scale(0.2); /* Inizio animazione di fade-in */
+  }
+
+  25% {
+    opacity: 0.5;
+    transform: translateY(-20px) scale(0.4); /* Inizio animazione di fade-in */
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0) scale(1); /* Inizio animazione di fade-in */
+  }
+
+  75% {
+    opacity: 0.5;
+    transform: translateY(20px) scale(0.4); /* Inizio animazione di fade-in */
+  }
+
+  85% {
+    opacity: 0.2;
+    transform: translateY(30px) scale(0.2); /* Inizio animazione di fade-in */
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.1); /* Fade-out e spostamento in alto */
+  }
+}
