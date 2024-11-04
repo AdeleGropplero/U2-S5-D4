@@ -1,0 +1,109 @@
+body {
+  font: 2rem "Indie Flower";
+  overflow-x: hidden;
+}
+
+section {
+  padding-block: 50px;
+  padding-inline: 20px;
+  background-color: #666666;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#title {
+  flex-basis: 100%;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(208, 84, 84);
+  text-decoration: underline;
+}
+
+div {
+  border: solid 1px black;
+  padding: 3rem;
+  margin: 20px;
+  box-shadow: 10px 10px 26px -6px rgba(0, 0, 0, 0.75);
+}
+
+div:hover {
+  transition: transform 0.333s ease;
+}
+
+.yellowish {
+  background: linear-gradient(
+    0deg,
+    rgb(121, 120, 120) 0%,
+    rgba(254, 255, 156, 1) 34%,
+    rgba(254, 255, 171, 1) 100%
+  );
+}
+
+.greenish {
+  background: linear-gradient(
+    0deg,
+    rgb(121, 120, 120) 0%,
+    rgba(155, 185, 156, 1) 34%,
+    rgba(138, 193, 140, 1) 100%
+  );
+}
+
+.purpleish {
+  background: linear-gradient(
+    0deg,
+    rgb(121, 120, 120) 0%,
+    rgba(165, 164, 218, 1) 41%,
+    rgba(160, 159, 205, 1) 100%
+  );
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 2.8rem;
+}
+
+#n1 {
+  transform: rotate(-4deg);
+}
+
+#n1:hover,
+#n2:hover,
+#n3:hover,
+#n4:hover,
+#n5:hover,
+#n6:hover,
+#n7:hover,
+#n8:hover {
+  transform: rotate(0deg);
+  scale: 1.3;
+  z-index: 10;
+}
+
+#n2 {
+  transform: rotate(5deg);
+}
+
+#n3 {
+  transform: rotate(-3deg);
+}
+
+#n4 {
+  transform: rotate(7deg);
+}
+
+#n5 {
+  transform: rotate(-6deg);
+}
+
+#n6 {
+  transform: rotate(5deg);
+}
+
+#n7 {
+  transform: rotate(-4deg);
+}
+
+#n8 {
+  transform: rotate(3deg);
+}
